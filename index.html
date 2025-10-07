@@ -77,8 +77,11 @@
     }
 
     .works {
-      flex: 1;
-      margin-top: 0em; /* bằng khoảng cách của .main-section ở trên => cân đối */
+  flex: 1;
+  margin-top: 0;  /* bỏ margin-top */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
     }
 
     .section-title {
