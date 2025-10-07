@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dai Bui | Portfolio 2025</title>
 
-  <!-- Nạp font Crimson Text từ Google Fonts -->
+  <!-- Font Crimson Text -->
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -24,13 +24,13 @@
       padding: 0 20px;
     }
 
-    /* Tiêu đề lớn, 10em */
+    /* Tiêu đề chính */
     h1 {
       font-weight: 700;
       letter-spacing: 1px;
       font-size: 7em;
       margin: 0;
-      line-height: 0.8;
+      line-height: 0.9;
     }
 
     p {
@@ -65,23 +65,38 @@
       background: #444;
     }
 
-    /* Link blog “Urban Machine and Soul” */
-    a.blog-link {
-      color: #000;
-      text-decoration: none;
-      border-bottom: 1px solid #999;
-      transition: color 0.3s, border-color 0.3s;
-    }
-
-    a.blog-link:hover {
-      color: #555;
-      border-color: #555;
-    }
-
     footer {
       margin-top: 60px;
       font-size: 0.9em;
       color: #555;
+    }
+
+    /* link Urban Machine and Soul */
+    .project-link {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .project-link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: #666;
+      transition: width 0.3s ease;
+    }
+
+    .project-link:hover {
+      color: #666;
+    }
+
+    .project-link:hover::after {
+      width: 100%;
     }
   </style>
 </head>
@@ -104,9 +119,21 @@
 
       <h2>Selected Works</h2>
       <h3>
-        <a href="https://urbanmachine.substack.com/" target="_blank" class="blog-link">
+        <a href="https://urbanmachine.substack.com/" target="_blank" class="project-link">
           Urban Machine and Soul
         </a>
       </h3>
       <p>
-        A semi-scholarly blog exploring AI risks in ur
+        A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.
+      </p>
+
+      <h3>Towards an Interdisciplinary Framework for Applying ML in Urban Planning</h3>
+      <p>
+        Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.
+      </p>
+    </section>
+
+    <footer>© 2025 Dai Bui</footer>
+  </main>
+</body>
+</html>
