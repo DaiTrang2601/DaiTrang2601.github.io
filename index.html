@@ -24,11 +24,11 @@
       padding: 0 20px;
     }
 
-    /* Tiêu đề cực lớn */
+    /* Tiêu đề lớn, 10em */
     h1 {
       font-weight: 700;
       letter-spacing: 1px;
-      font-size: 20em; /* bạn yêu cầu */
+      font-size: 10em;
       margin: 0;
       line-height: 0.8;
     }
@@ -65,6 +65,19 @@
       background: #444;
     }
 
+    /* Link blog “Urban Machine and Soul” */
+    a.blog-link {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #999;
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    a.blog-link:hover {
+      color: #555;
+      border-color: #555;
+    }
+
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -75,7 +88,7 @@
 <body>
   <main>
     <h1>PORTFOLIO 2025</h1>
-    <p><strong>Dai Bui</strong> — Urban Planner · Philosopher · AI Researcher</p>
+    <p><strong>Dai Bui</strong> — Urban Planner | Interdisciplinary Researcher</p>
 
     <section class="buttons">
       <a href="assets/DAI_BUI_Resume.pdf" target="_blank" class="button">View Resume</a>
@@ -90,18 +103,10 @@
       </p>
 
       <h2>Selected Works</h2>
-      <h3>Urban Machine and Soul</h3>
+      <h3>
+        <a href="https://urbanmachine.substack.com/" target="_blank" class="blog-link">
+          Urban Machine and Soul
+        </a>
+      </h3>
       <p>
-        A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.
-      </p>
-
-      <h3>Towards an Interdisciplinary Framework for Applying ML in Urban Planning</h3>
-      <p>
-        Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.
-      </p>
-    </section>
-
-    <footer>© 2025 Dai Bui</footer>
-  </main>
-</body>
-</html>
+        A semi-scholarly blog exploring AI risks in ur
