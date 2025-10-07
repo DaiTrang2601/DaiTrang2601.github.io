@@ -1,0 +1,27 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fafafa;
+  margin: 0;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
