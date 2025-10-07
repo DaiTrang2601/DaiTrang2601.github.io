@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đài — Resume</title>
+  <style>
+    body { margin: 0; padding: 0; height: 100vh; background: #fdfdfd; }
+    iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+  <iframe src="DAI%20BUI_Resume.pdf#view=FitH" allowfullscreen></iframe>
+</body>
+</html>
