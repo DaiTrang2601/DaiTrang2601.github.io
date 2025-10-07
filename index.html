@@ -41,6 +41,8 @@
       font-size: 1.5em;
       max-width: 800px;
       margin-bottom: 2em;
+      font-style: italic;
+      color: #555;
     }
     .buttons {
       display: flex;
@@ -71,6 +73,24 @@
       margin-top: 2em;
       margin-bottom: 0.8em;
     }
+    .work {
+      margin-bottom: 1.8em;
+    }
+    .work a {
+      font-size: 1.6em;
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .work a:hover {
+      text-decoration: underline;
+    }
+    .work p {
+      margin: 0.4em 0 0;
+      font-size: 1.1em;
+      color: #444;
+      line-height: 1.3;
+    }
   </style>
 </head>
 <body>
@@ -87,14 +107,23 @@
     </p>
 
     <div class="buttons">
-      <a href="#">View Portfolio</a>
-      <a href="#">View Resume</a>
+      <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
+      <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
     </div>
 
     <div class="divider"></div>
 
     <h3 class="section-title">Selected Works</h3>
+
+    <div class="work">
+      <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
+      <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
+    </div>
+
+    <div class="work">
+      <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
+      <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.</p>
+    </div>
   </div>
 </body>
 </html>
-
