@@ -17,7 +17,7 @@
     header {
       text-align: left;
       padding: 2em 6em;
-      border-bottom: 1px solid #444; /* đường line mảnh và xám đậm */
+      border-bottom: 1px solid #444;
     }
     header h1 {
       font-size: 7em;
@@ -34,11 +34,22 @@
       font-style: italic;
       color: #555;
     }
-    .buttons {
+
+    /* --- layout mới --- */
+    .main-section {
       display: flex;
-      gap: 1.5em;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 4em;
       margin-top: 2em;
     }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2em;
+    }
+
     .buttons a {
       font-size: 1.2em;
       text-decoration: none;
@@ -47,40 +58,48 @@
       padding: 0.6em 1.4em;
       border-radius: 6px;
       transition: all 0.3s ease;
+      width: fit-content;
     }
+
     .buttons a:hover {
       background-color: #111;
       color: #fff;
     }
-    .divider {
-      border-top: 1px solid #444;
-      margin-top: 2.5em;
-      width: 100%;
+
+    .works {
+      flex: 1;
+      text-align: left;
     }
+
     .section-title {
-      font-size: 3em;
+      font-size: 2.2em;
       color: red;
-      margin-top: 2em;
       margin-bottom: 0.8em;
     }
+
     .work {
       margin-bottom: 1.8em;
     }
+
     .work a {
-      font-size: 1.6em;
+      font-size: 1.4em;
       color: #111;
       text-decoration: none;
       font-weight: 600;
     }
+
     .work a:hover {
       text-decoration: underline;
     }
+
     .work p {
       margin: 0.4em 0 0;
-      font-size: 1.1em;
+      font-size: 1.05em;
       color: #444;
       line-height: 1.3;
+      max-width: 500px;
     }
+
   </style>
 </head>
 <body>
@@ -95,23 +114,25 @@
       My works aim to clarify how ethical and spatial reasoning shape our urban future.
     </p>
 
-    <div class="buttons">
-      <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
-      <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
-    </div>
+    <div class="main-section">
+      <div class="buttons">
+        <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
+        <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
+      </div>
 
-    <div class="divider"></div>
+      <div class="works">
+        <h3 class="section-title">Selected Works</h3>
 
-    <h3 class="section-title">Selected Works</h3>
+        <div class="work">
+          <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
+          <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
+        </div>
 
-    <div class="work">
-      <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
-      <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
-    </div>
-
-    <div class="work">
-      <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
-      <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.</p>
+        <div class="work">
+          <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
+          <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
