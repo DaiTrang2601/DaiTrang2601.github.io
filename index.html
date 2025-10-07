@@ -4,124 +4,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dai Bui | Portfolio 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-family: 'Crimson Text', serif;
       background-color: #fff;
-      color: #222;
+      color: #111;
       margin: 0;
-      padding: 60px;
+      padding: 0;
+      line-height: 1.3;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
+    header {
+      text-align: left;
+      padding: 2em 6em 0 6em;
     }
 
-    h1 {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 6px;
+    header h1 {
+      font-size: 7em;
+      margin: 0 0 0.2em 0;
+      color: #000;
     }
 
     .subtitle {
-      font-size: 18px;
+      font-size: 1.8em;
+      margin: 0 0 0.4em 0;
+    }
+
+    .intro {
+      font-size: 1.4em;
+      max-width: 900px;
+      margin: 0 0 1.5em 0;
       color: #555;
-      margin-bottom: 20px;
+      font-style: italic;
     }
 
-    .description {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 24px;
-      max-width: 700px;
+    .divider {
+      border-top: 1px solid #444;
+      width: 100%;
+      margin: 2em 0;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid #555;
-      margin: 30px 0;
-    }
-
-    .actions {
+    .main-section {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 40px;
+      gap: 4em;
+      padding: 0 6em 4em 6em;
+      margin-top: 2em; /* khoảng cách từ line đến nút View Portfolio */
     }
 
     .buttons {
       display: flex;
-      gap: 10px;
+      flex-direction: column;
+      gap: 1.2em;
     }
 
-    button {
-      background-color: #000;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: 0.2s;
-    }
-
-    button:hover {
-      background-color: #333;
-    }
-
-    .selected-works {
-      text-align: right;
-      max-width: 400px;
-    }
-
-    .selected-works h3 {
-      font-size: 14px;
-      color: #000;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .selected-works a {
-      font-size: 15px;
-      color: #000;
-      font-weight: 500;
+    .buttons a {
+      font-size: 1.2em;
       text-decoration: none;
-      display: block;
-      margin-bottom: 6px;
+      color: #111;
+      border: 1px solid #111;
+      padding: 0.6em 1.4em;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      width: fit-content;
     }
 
-    .selected-works p {
-      font-size: 14px;
-      color: #555;
-      margin: 0;
+    .buttons a:hover {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .works {
+      flex: 1;
+      margin-top: 2em; /* bằng khoảng cách của .main-section ở trên => cân đối */
+    }
+
+    .section-title {
+      font-size: 2.2em;
+      color: red;
+      margin-bottom: 0.8em;
+    }
+
+    .work {
+      margin-bottom: 1.8em;
+    }
+
+    .work a {
+      font-size: 1.4em;
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .work a:hover {
+      text-decoration: underline;
+    }
+
+    .work p {
+      margin: 0.4em 0 0;
+      font-size: 1.05em;
+      color: #444;
+      line-height: 1.3;
+      max-width: 500px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Portfolio 2025</h1>
-    <div class="subtitle">Dai Bui — Urban Planner · Philosopher · AI Researcher</div>
-
-    <div class="description">
-      Exploring intersections between urban planning, machine learning, and philosophy. 
+    <p class="subtitle">Dai Bui — Urban Planner · Philosopher · AI Researcher</p>
+    <p class="intro">
+      Exploring intersections between urban planning, machine learning, and philosophy.  
       My works aim to clarify how ethical and spatial reasoning shape our urban future.
+    </p>
+  </header>
+
+  <div class="divider"></div>
+
+  <div class="main-section">
+    <div class="buttons">
+      <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
+      <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
     </div>
 
-    <hr />
+    <div class="works">
+      <h3 class="section-title">Selected Works</h3>
 
-    <div class="actions">
-      <div class="buttons">
-        <button>View Portfolio</button>
-        <button>View Resume</button>
+      <div class="work">
+        <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
+        <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
       </div>
 
-      <div class="selected-works">
-        <h3>Selected Works</h3>
-        <a href="#">Urban Machine and Soul</a>
-        <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
-        <a href="#">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
+      <div class="work">
+        <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
         <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.</p>
       </div>
     </div>
