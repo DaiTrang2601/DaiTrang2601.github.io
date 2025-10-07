@@ -4,13 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dai Bui | Portfolio 2025</title>
-
-  <!-- Font Crimson Text -->
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: "Crimson Text", serif;
+      font-family: "Helvetica Neue", Arial, sans-serif;
       background-color: #fff;
       color: #111;
       margin: 0;
@@ -24,25 +21,31 @@
       padding: 0 20px;
     }
 
-    /* Tiêu đề chính */
     h1 {
+      font-family: "Crimson Text", serif;
+      font-size: 7em;
       font-weight: 700;
       letter-spacing: 1px;
-      font-size: 7em;
-      margin: 0;
-      line-height: 0.9;
+      color: #c00; /* đỏ đậm */
+      margin-bottom: 0.3em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-top: 2em;
+    }
+
+    h2:nth-of-type(2) {
+      color: #c00; /* "Selected Works" màu đỏ */
     }
 
     p {
       line-height: 1.6;
     }
 
-    /* đoạn mô tả in nghiêng, xám đậm */
     .intro {
       font-style: italic;
       color: #444;
-      font-size: 1.1em;
-      margin-top: 10px;
     }
 
     .buttons {
@@ -65,45 +68,27 @@
       background: #444;
     }
 
+    a.link {
+      color: #c00;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       margin-top: 60px;
       font-size: 0.9em;
       color: #555;
-    }
-
-    /* link Urban Machine and Soul */
-    .project-link {
-      color: #000;
-      text-decoration: none;
-      font-weight: 600;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-
-    .project-link::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -3px;
-      left: 0;
-      background-color: #666;
-      transition: width 0.3s ease;
-    }
-
-    .project-link:hover {
-      color: #666;
-    }
-
-    .project-link:hover::after {
-      width: 100%;
     }
   </style>
 </head>
 <body>
   <main>
     <h1>PORTFOLIO 2025</h1>
-    <p><strong>Dai Bui</strong> — Urban Planner | Interdisciplinary Researcher</p>
+    <p><strong>Dai Bui</strong> — Urban Planner · Philosopher · AI Researcher</p>
 
     <section class="buttons">
       <a href="assets/DAI_BUI_Resume.pdf" target="_blank" class="button">View Resume</a>
@@ -113,16 +98,12 @@
     <section>
       <h2>About</h2>
       <p class="intro">
-        Exploring intersections between urban planning, machine learning, and philosophy.<br>
+        Exploring intersections between urban planning, machine learning, and philosophy.
         My works aim to clarify how ethical and spatial reasoning shape our urban future.
       </p>
 
       <h2>Selected Works</h2>
-      <h3>
-        <a href="https://urbanmachine.substack.com/" target="_blank" class="project-link">
-          Urban Machine and Soul
-        </a>
-      </h3>
+      <h3><a href="https://urbanmachine.substack.com/" target="_blank" class="link">Urban Machine and Soul</a></h3>
       <p>
         A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.
       </p>
