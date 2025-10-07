@@ -4,136 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dai Bui | Portfolio 2025</title>
-
-  <!-- Font Crimson Text -->
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: "Crimson Text", serif;
+      font-family: 'Crimson Text', serif;
       background-color: #fff;
       color: #111;
       margin: 0;
       padding: 0;
-      text-align: center;
-      line-height: 1.1;
-    }
-
-    main {
-      max-width: 750px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 6em;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: #c00; /* đỏ */
-      margin-bottom: 0.2em;
-      white-space: nowrap; /* không cho xuống hàng */
-      line-height: 1;
-    }
-
-    p {
       line-height: 1.2;
-      font-size: 1.05em;
-      margin: 0.4em 0;
     }
-
-    .subtitle {
-      margin-bottom: 0.6em;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em 6em;
+      border-bottom: 1px solid #ddd;
     }
-
+    header h1 {
+      font-size: 7em;
+      margin: 0;
+    }
+    header h1 span {
+      color: red;
+    }
+    .title-link {
+      text-decoration: none;
+      color: black;
+    }
+    header h2 {
+      font-size: 7em;
+      color: red;
+      margin: 0;
+    }
+    .content {
+      padding: 4em 6em;
+    }
     .intro {
-      font-style: italic;
-      color: #444;
-      margin-bottom: 1.2em;
+      font-size: 1.5em;
+      max-width: 800px;
+      margin-bottom: 2em;
     }
-
-    h2 {
-      font-size: 1.6em;
-      margin-top: 1.4em;
-      margin-bottom: 0.3em;
-      line-height: 1.1;
-    }
-
-    h2:nth-of-type(1) {
-      color: #c00; /* Selected Works đỏ */
-    }
-
-    h3 {
-      margin: 0.8em 0 0.3em 0;
-      font-size: 1.3em;
-    }
-
     .buttons {
-      margin: 25px 0;
+      display: flex;
+      gap: 1.5em;
+      margin-top: 2em;
     }
-
-    a.button {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 24px;
+    .buttons a {
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #111;
+      border: 1px solid #111;
+      padding: 0.6em 1.4em;
       border-radius: 6px;
-      background: #000;
+      transition: all 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #111;
       color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s;
     }
-
-    a.button:hover {
-      background: #444;
-    }
-
-    a.link {
-      color: #111; /* Urban Machine and Soul: đen */
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    a.link:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #555;
-      line-height: 1;
+    .divider {
+      border-top: 1px solid #444;
+      margin-top: 2.5em;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>PORTFOLIO 2025</h1>
-    <p class="subtitle"><strong>Dai Bui</strong> — Urban Planner · Philosopher · AI Researcher</p>
+  <header>
+    <h1><a href="https://urbanmachine.substack.com/" class="title-link">Urban Machine and Soul</a></h1>
+    <h2><span>Portfolio 2025</span></h2>
+  </header>
 
+  <div class="content">
+    <p style="font-size:1.8em; margin-bottom: 0.5em;">Dai Bui — Urban Planner · Philosopher · AI Researcher</p>
     <p class="intro">
-      Exploring intersections between urban planning, machine learning, and philosophy.
+      Exploring intersections between urban planning, machine learning, and philosophy.  
       My works aim to clarify how ethical and spatial reasoning shape our urban future.
     </p>
 
-    <section class="buttons">
-      <a href="assets/DAI_BUI_Resume.pdf" target="_blank" class="button">View Resume</a>
-      <a href="assets/PORTFOLIO_2025.pdf" target="_blank" class="button">View Portfolio</a>
-    </section>
+    <div class="buttons">
+      <a href="#">View Portfolio</a>
+      <a href="#">View Resume</a>
+    </div>
 
-    <section>
-      <h2>Selected Works</h2>
-      <h3><a href="https://urbanmachine.substack.com/" target="_blank" class="link">Urban Machine and Soul</a></h3>
-      <p>
-        A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.
-      </p>
-
-      <h3>Towards an Interdisciplinary Framework for Applying ML in Urban Planning</h3>
-      <p>
-        Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.
-      </p>
-    </section>
-
-    <footer>© 2025 Dai Bui</footer>
-  </main>
+    <div class="divider"></div>
+  </div>
 </body>
 </html>
