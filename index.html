@@ -12,36 +12,45 @@
       color: #111;
       margin: 0;
       padding: 0;
-      line-height: 1.2;
-    }
-    header {
-      text-align: left;
-      padding: 2em 6em;
-      border-bottom: 1px solid #444;
-    }
-    header h1 {
-      font-size: 7em;
-      margin: 0;
-      color: #000;
-    }
-    .content {
-      padding: 4em 6em;
-    }
-    .intro {
-      font-size: 1.5em;
-      max-width: 800px;
-      margin-bottom: 2em;
-      font-style: italic;
-      color: #555;
+      line-height: 1.3;
     }
 
-    /* --- layout mới --- */
+    header {
+      text-align: left;
+      padding: 2em 6em 0 6em;
+    }
+
+    header h1 {
+      font-size: 7em;
+      margin: 0 0 0.2em 0;
+      color: #000;
+    }
+
+    .subtitle {
+      font-size: 1.8em;
+      margin: 0 0 0.4em 0;
+    }
+
+    .intro {
+      font-size: 1.4em;
+      max-width: 900px;
+      margin: 0 0 1.5em 0;
+      color: #555;
+      font-style: italic;
+    }
+
+    .divider {
+      border-top: 1px solid #444;
+      width: 100%;
+      margin: 2em 0;
+    }
+
     .main-section {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
+      justify-content: space-between;
       gap: 4em;
-      margin-top: 2em;
+      padding: 0 6em 4em 6em;
     }
 
     .buttons {
@@ -68,7 +77,6 @@
 
     .works {
       flex: 1;
-      text-align: left;
     }
 
     .section-title {
@@ -99,39 +107,37 @@
       line-height: 1.3;
       max-width: 500px;
     }
-
   </style>
 </head>
 <body>
   <header>
     <h1>Portfolio 2025</h1>
-  </header>
-
-  <div class="content">
-    <p style="font-size:1.8em; margin-bottom:0.5em;">Dai Bui — Urban Planner · Philosopher · AI Researcher</p>
+    <p class="subtitle">Dai Bui — Urban Planner · Philosopher · AI Researcher</p>
     <p class="intro">
       Exploring intersections between urban planning, machine learning, and philosophy.  
       My works aim to clarify how ethical and spatial reasoning shape our urban future.
     </p>
+  </header>
 
-    <div class="main-section">
-      <div class="buttons">
-        <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
-        <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
+  <div class="divider"></div>
+
+  <div class="main-section">
+    <div class="buttons">
+      <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
+      <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
+    </div>
+
+    <div class="works">
+      <h3 class="section-title">Selected Works</h3>
+
+      <div class="work">
+        <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
+        <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
       </div>
 
-      <div class="works">
-        <h3 class="section-title">Selected Works</h3>
-
-        <div class="work">
-          <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
-          <p>A semi-scholarly blog exploring AI risks in urban contexts through philosophy and ethics.</p>
-        </div>
-
-        <div class="work">
-          <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
-          <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.</p>
-        </div>
+      <div class="work">
+        <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying ML in Urban Planning</a>
+        <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical data use.</p>
       </div>
     </div>
   </div>
