@@ -48,19 +48,11 @@
 
     .main-section {
       display: flex;
-      flex-direction: column;
-      gap: 2em;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 4em;
       padding: 0 6em 4em 6em;
       margin-top: 1.5em;
-    }
-
-    /* Hàng chứa 2 nút và tiêu đề Selected Works */
-    .top-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 1em;
     }
 
     .buttons {
@@ -86,18 +78,18 @@
       transform: translateY(-2px);
     }
 
-    .section-title {
-      font-size: 2.1em;
-      color: #c61a2b; /* đỏ học thuật mềm */
-      margin: 0;
-      letter-spacing: 0.4px;
-    }
-
     .works {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    }
+
+    .section-title {
+      font-size: 2.1em;
+      color: #ff0f63; /* đỏ mềm hơn */
+      margin-bottom: 0.6em;
+      letter-spacing: 0.4px;
     }
 
     .work {
@@ -138,15 +130,14 @@
   <div class="divider"></div>
 
   <div class="main-section">
-    <div class="top-row">
-      <div class="buttons">
-        <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
-        <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
-      </div>
-      <h3 class="section-title">Selected Works</h3>
+    <div class="buttons">
+      <a href="assets/PORTFOLIO_2025.pdf" target="_blank">View Portfolio</a>
+      <a href="assets/DAI_BUI_Resume.pdf" target="_blank">View Resume</a>
     </div>
 
     <div class="works">
+      <h3 class="section-title">Selected Works</h3>
+
       <div class="work">
         <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
         <p>A semi-scholarly blog exploring AI risks in urban contexts through an interdisciplinary perspective.</p>
