@@ -12,7 +12,7 @@
       color: #111;
       margin: 0;
       padding: 0;
-      line-height: 1.3;
+      line-height: 1.4;
     }
 
     header {
@@ -21,9 +21,10 @@
     }
 
     header h1 {
-      font-size: 6em;
+      font-size: 5.2em;
       margin: 0 0 0.2em 0;
       color: #000;
+      letter-spacing: -0.01em;
     }
 
     .subtitle {
@@ -32,9 +33,9 @@
     }
 
     .intro {
-      font-size: 1.4em;
+      font-size: 1.35em;
       max-width: 900px;
-      margin: 0 0 1.5em 0;
+      margin: 0 0 1.8em 0;
       color: #555;
       font-style: italic;
     }
@@ -42,7 +43,7 @@
     .divider {
       border-top: 1px solid #444;
       width: 100%;
-      margin: 2em 0;
+      margin: 1.5em 0 2em 0;
     }
 
     .main-section {
@@ -51,13 +52,13 @@
       justify-content: space-between;
       gap: 4em;
       padding: 0 6em 4em 6em;
-      margin-top: 2em; /* khoảng cách từ line đến nút View Portfolio */
+      margin-top: 1.5em;
     }
 
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 3em;
+      gap: 2.6em;
     }
 
     .buttons a {
@@ -74,24 +75,25 @@
     .buttons a:hover {
       background-color: #111;
       color: #fff;
+      transform: translateY(-2px);
     }
 
     .works {
-  flex: 1;
-  margin-top: 0;  /* bỏ margin-top */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     .section-title {
-      font-size: 2.2em;
-      color: red;
-      margin-bottom: 0.3em;
+      font-size: 2.1em;
+      color: #c61a2b; /* đỏ học thuật mềm hơn */
+      margin-bottom: 0.6em;
+      letter-spacing: 0.4px;
     }
 
     .work {
-      margin-bottom: 1.8em;
+      margin-bottom: 2em;
     }
 
     .work a {
@@ -99,6 +101,7 @@
       color: #111;
       text-decoration: none;
       font-weight: 600;
+      line-height: 1.3;
     }
 
     .work a:hover {
@@ -109,8 +112,8 @@
       margin: 0.4em 0 0;
       font-size: 1.05em;
       color: #444;
-      line-height: 1.3;
-      max-width: 500px;
+      line-height: 1.4;
+      max-width: 520px;
     }
   </style>
 </head>
@@ -119,7 +122,7 @@
     <h1>Portfolio 2025</h1>
     <p class="subtitle">Dai T.N. Bui — Urban Planner | Interdisciplinary Researcher</p>
     <p class="intro">
-      Exploring intersections between urban planning, machine learning, philosophy and policy.  
+      Exploring intersections between urban planning, machine learning, philosophy, and policy.  
       My work aims to clarify how AI ethical risks and spatial reasoning shape our urban future.
     </p>
   </header>
@@ -137,14 +140,15 @@
 
       <div class="work">
         <a href="https://urbanmachine.substack.com/" target="_blank">Urban Machine and Soul</a>
-        <p>A semi-scholarly blog exploring AI risks in urban contexts through an interdisciplinary perspective..</p>
+        <p>A semi-scholarly blog exploring AI risks in urban contexts through an interdisciplinary perspective.</p>
       </div>
 
       <div class="work">
-        <a href="#" target="_blank">Towards an Interdisciplinary Framework for Applying Machine Learning in Urban Planning: From Spatial Interpretation to Matrix Mapping and Ethical Risks (v0.5—Working Draft)
-
-</a>
-        <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical risks in urban.</p>
+        <a href="#" target="_blank">
+          Towards an Interdisciplinary Framework for Applying Machine Learning in Urban Planning:  
+          From Spatial Interpretation to Matrix Mapping and Ethical Risks (v0.5 — Working Draft)
+        </a>
+        <p>Analyzing the relationship between spatial matrices and urban forms, emphasizing ethical risks in urban contexts.</p>
       </div>
     </div>
   </div>
